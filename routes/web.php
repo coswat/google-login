@@ -34,5 +34,5 @@ Route::controller(SocialRegister::class)->gorup(function (){
 Route::post('reg-action',[RegisterController::class,'index'])->name('reg.action');
 
 Route::get('/dashboard',function(){
-  return "hello";
+  return "You Are Logged In !";
 })->middleware('auth-check')->name('dashboard');
