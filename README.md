@@ -1,2 +1,2 @@
 # google-login
-#laravel
+#### simple google login and register using laravel
