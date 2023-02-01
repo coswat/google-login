@@ -2,8 +2,9 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
 use App\Models\User;
+use Illuminate\Foundation\Http\FormRequest;
+
 class RegisterFormRequest extends FormRequest
 {
     /**
@@ -24,30 +25,30 @@ class RegisterFormRequest extends FormRequest
     public function rules()
     {
         return [
-          
+
             'name' => [
-              'required',
-              'max:15',
-              ],
-              
-              'email' => [
+                'required',
+                'max:15',
+            ],
+
+            'email' => [
                 'required',
                 'unique:users',
                 'email',
                 'max:40',
-                ],
-                
-                'password' => [
-                  'required',
-                  'min:8',
-                  'max:40',
-                  ],
-                  
-                  'confirm_password' => [
-                    'required_with:password',
-                    'same:password',
-                    'min:8'
-                    ],
+            ],
+
+            'password' => [
+                'required',
+                'min:8',
+                'max:40',
+            ],
+
+            'confirm_password' => [
+                'required_with:password',
+                'same:password',
+                'min:8',
+            ],
         ];
     }
 }
