@@ -27,8 +27,8 @@ DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=laravel-google-login
-DB_USERNAME={USERNAME}
-DB_PASSWORD={PASSWORD}
+DB_USERNAME=USERNAME
+DB_PASSWORD=PASSWORD
 ```
 ### Setup your Google  Credentials in the ```.env``` file <br>
 ```
